@@ -1,1 +1,1 @@
-# GoStay
+# GoStay.WebServer
