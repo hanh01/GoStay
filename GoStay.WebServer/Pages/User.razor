@@ -1,0 +1,8 @@
+@page "/user/{Id:long}"
+
+<GoStay.Seli.components.profilePage.UserById Id="@Id"/>
+
+@code {
+    [Parameter]
+    public long? Id { get; set; }
+}

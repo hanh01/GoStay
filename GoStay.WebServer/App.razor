@@ -1,0 +1,79 @@
+﻿@using GoStay.Peter
+@using GoStay.Peter.NugetService
+@inject PeterCore PeterCore;
+@inject NugetServices NugetService;
+@inject Interop DoMinterop;
+@inject ModuleManagerController ModuleManagerController
+
+@inject IHostEnvironment HostEnvironment
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly">
+
+        <Found Context="routeData">
+
+            @if (!IsLoadedScript)
+            {
+                <GoStay.Peter.Components.Loading></GoStay.Peter.Components.Loading>
+            }
+            @if (IsLoadedScript)
+            {
+                <RouteView DefaultLayout="@typeof(MainLayout)" RouteData="@routeData"/>
+            }
+            <FocusOnNavigate RouteData="@routeData" Selector="h1"/>
+        </Found>
+        <NotFound>
+            <PageTitle>Not found</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p role="alert">Sorry, there's nothing at this address.</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>
+
+@code {
+
+
+    public bool IsLoadedScript { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await PeterCore.InitScript();
+            NugetService.ENV = ModuleManagerController.env;
+            NugetService.DoMinterop = DoMinterop;
+            NugetService.ComplelteLoadNuget += OnLoadedNuget;
+            NugetService.PackagesNames = new List<string>()
+            {
+                // "Nala"
+            };
+            NugetService.UpdateNugets();
+        }
+    }
+
+
+    public void Dispose()
+    {
+        NugetService.ComplelteLoadNuget -= OnLoadedNuget;
+    }
+
+    private async void OnLoadedNuget(object? sender, EventArgs e)
+    {
+        if (HostEnvironment.IsDevelopment())
+        {
+            try
+            {
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+
+
+        IsLoadedScript = true;
+        await InvokeAsync(StateHasChanged);
+    }
+
+}

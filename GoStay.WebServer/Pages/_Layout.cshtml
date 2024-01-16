@@ -1,0 +1,38 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace GoStay.WebServer.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <link href="GoStay.WebServer.styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="_content/GoStay.Seli/css/homePage.css">
+    
+    @* flowbite *@
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    
+    @* google map *@
+    @* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbnGd00W_OALQTGt9FnMA9NdGqXnjhwcA&libraries=places&language=vi&region=VI&callback=Seli.initMap" async defer></script> *@
+
+    @* MapLibre *@
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    @RenderBody()
+
+<script src="_framework/blazor.server.js"></script>
+
+@* progress bar circle *@
+<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+
+</body>
+
+</html>

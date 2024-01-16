@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{1EFF76A6-10EE-46ED-BCA1-8CAC94A49BE3}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GoStay.Seli/components/detailHomeStay/ColumnRight.razor">
+    <Files>
+      <File FileName="GoStay.WebServer/Pages/HomeStay.razor" Line="6" Column="1" />
+      <File FileName="GoStay.WebServer/Pages/DetailHomeStay.razor" Line="8" Column="1" />
+      <File FileName="GoStay.Seli/components/detailHomeStay/ListRooms.razor" Line="1" Column="4" />
+      <File FileName="GoStay.Seli/srcComponent/Common.cs" Line="1" Column="1" />
+      <File FileName="GoStay.Seli/srcComponent/FilterModel.cs" Line="1" Column="1" />
+      <File FileName="GoStay.Seli/srcComponent/SeliComponent.cs" Line="1" Column="1" />
+      <File FileName="GoStay.Seli/tailwind.config.js" Line="1" Column="1" />
+      <File FileName="GoStay.Seli/wwwroot/js/index.js" Line="1" Column="1" />
+      <File FileName="GoStay.Seli/components/detailHomeStay/ColumnRight.razor" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GoStay" expanded="True">
+            <Node name="GoStay.Seli" expanded="True">
+              <Node name="components" expanded="True">
+                <Node name="detailHomeStay" expanded="True">
+                  <Node name="ColumnRight.razor" selected="True" />
+                </Node>
+              </Node>
+              <Node name="srcComponent" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GoStay.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.WebClient FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

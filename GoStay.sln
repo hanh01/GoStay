@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoStay.Seli", "GoStay.Seli\GoStay.Seli.csproj", "{9BC9FCDB-295A-43E8-9AFC-C90F9CC572BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoStay.WebServer", "GoStay.WebServer\GoStay.WebServer.csproj", "{1EFF76A6-10EE-46ED-BCA1-8CAC94A49BE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BC9FCDB-295A-43E8-9AFC-C90F9CC572BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC9FCDB-295A-43E8-9AFC-C90F9CC572BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC9FCDB-295A-43E8-9AFC-C90F9CC572BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC9FCDB-295A-43E8-9AFC-C90F9CC572BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EFF76A6-10EE-46ED-BCA1-8CAC94A49BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EFF76A6-10EE-46ED-BCA1-8CAC94A49BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EFF76A6-10EE-46ED-BCA1-8CAC94A49BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EFF76A6-10EE-46ED-BCA1-8CAC94A49BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3864925E-B733-42BF-8E87-E30001E4DB89}
+	EndGlobalSection
+EndGlobal

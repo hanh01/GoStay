@@ -1,0 +1,19 @@
+﻿{
+   
+    "profiles": {
+        "GoStay.WebServer": {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": false,
+            "applicationUrl": "http://localhost:39574;",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "API_HOST": "https://hotelapifront.softbnb.com",
+                "OIDC_CLIENT_CONFIG": "https://peter.zozoteam.dev/.ory/hydra/public/;GoStay;GoStay;code;query;openid,offline",
+                "JWK_JSON_KEY": "{\"keys\":[{\"kty\":\"EC\",\"d\":\"J8vs7IfzM9xwWXkY1A747ttWMqfjNgp7MUigqOsJJV0\",\"use\":\"sig\",\"crv\":\"P-256\",\"kid\":\"Gostay\",\"x\":\"PdU8Hci3FfG3AsIjfJpkBVpcEWsSS4igqD7AcASeQM0\",\"y\":\"faBJxy3lanTDRyT3dcBew2Sf4cKyIGEk0ux7Y8g_sGw\",\"alg\":\"ES256\"}]}"            }
+        }
+        
+    }
+}
+
+

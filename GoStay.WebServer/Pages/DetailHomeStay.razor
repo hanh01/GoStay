@@ -1,0 +1,8 @@
+﻿@page "/detail-rooms/{Id:long}"
+
+<GoStay.Seli.components.detailHomeStay.IndexDetailRooms ID="@Id" />
+
+@code {
+    [Parameter]
+    public long Id { get; set; }
+}

@@ -1,0 +1,17 @@
+@page "/DateTimePicker"
+@using GoStay.Seli.components.Timepicker
+@using GoStay.Peter
+
+<div class="w-[400px]">
+    <GoStay.Seli.components.Timepicker.DatePickerByHour  @bind-Value="TinTin" />
+</div>
+
+<p>@TinTin.Item1.ToString("MM/dd/yyyy")</p>
+
+@code {
+    public (DateTime,DateTime) TinTin { get; set; }
+ 
+
+    
+
+}

@@ -1,0 +1,8 @@
+﻿@page "/home-stay/{Search}"
+
+<GoStay.Seli.components.listHomeStay.IndexListHomeStay SearchData="@Search"/>
+
+@code {
+    [Parameter]
+    public  string? Search { get; set; }
+}

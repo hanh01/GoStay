@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
+  &lt;Assembly Path="/Users/dohonghanh/.nuget/packages/gostay.peter/1.0.0-rc-19/lib/net6.0/GoStay.Peter.dll" /&gt;
+  &lt;Assembly Path="/Users/dohonghanh/.nuget/packages/gostay.hotelapi/2022.11.12.110819/lib/net6.0/HotelApi.dll" /&gt;
+  &lt;Assembly Path="/Users/dohonghanh/.nuget/packages/blazordaterangepicker/4.2.0/lib/net6.0/BlazorDateRangePicker.dll" /&gt;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
